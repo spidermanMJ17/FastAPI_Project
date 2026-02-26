@@ -75,6 +75,8 @@ It transforms raw patient data into actionable insights — in milliseconds.
 ---
 
 ## 📦 Project Structure
+---
+
 FastAPI_Project/
 │
 ├── main.py # FastAPI application entry point
@@ -84,3 +86,4 @@ FastAPI_Project/
 ├── frontend.py # Optional frontend integration
 ├── requirements.txt # Dependencies
 └── README.md
+---
