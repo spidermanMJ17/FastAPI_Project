@@ -36,5 +36,51 @@ It transforms raw patient data into actionable insights — in milliseconds.
 ---
 
 ## 🧠 System Architecture
+    ┌────────────────────┐
+    │  Client / Frontend │
+    │  (Postman / UI)    │
+    └─────────┬──────────┘
+              │ HTTP Request
+              ▼
+    ┌────────────────────┐
+    │     FastAPI App    │
+    │   (main.py/app.py) │
+    └─────────┬──────────┘
+              │ Load Model
+              ▼
+    ┌────────────────────┐
+    │   Trained ML Model │
+    │     (model.pkl)    │
+    └─────────┬──────────┘
+              │ Prediction
+              ▼
+    ┌────────────────────┐
+    │   JSON Response    │
+    │  Risk Classification│
+    └────────────────────┘
 
-### 🔄 Prediction Flow
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| 🚀 Backend | FastAPI |
+| 🧠 Model | Pre-trained ML Model (Pickle) |
+| 📦 Data Format | JSON |
+| 🐍 Language | Python |
+| 📖 API Docs | Swagger UI / ReDoc |
+
+---
+
+## 📦 Project Structure
+FastAPI_Project/
+│
+├── main.py # FastAPI application entry point
+├── app.py # Core API logic
+├── model.pkl # Trained ML model
+├── patients.json # Sample patient data
+├── frontend.py # Optional frontend integration
+├── requirements.txt # Dependencies
+└── README.md
