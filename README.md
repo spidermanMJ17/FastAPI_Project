@@ -75,16 +75,15 @@ It transforms raw patient data into actionable insights — in milliseconds.
 ---
 
 ## 📦 Project Structure
----
 
+```
 FastAPI_Project/
 │
-├── main.py # FastAPI application entry point
-├── app.py # Core API logic
-├── model.pkl # Trained ML model
-├── patients.json # Sample patient data
-├── frontend.py # Optional frontend integration
-├── requirements.txt # Dependencies
+├── main.py            # FastAPI application entry point
+├── app.py             # Core API logic
+├── model.pkl          # Trained ML model
+├── patients.json      # Sample patient data
+├── frontend.py        # Optional frontend integration
+├── requirements.txt   # Dependencies
 └── README.md
-
----
+```
