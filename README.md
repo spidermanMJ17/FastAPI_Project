@@ -86,4 +86,5 @@ FastAPI_Project/
 ├── frontend.py # Optional frontend integration
 ├── requirements.txt # Dependencies
 └── README.md
+
 ---
